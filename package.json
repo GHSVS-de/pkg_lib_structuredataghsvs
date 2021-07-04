@@ -1,0 +1,55 @@
+{
+	"name": "lib_structuredataghsvs",
+	"nameReal": "structuredataghsvs",
+	"filename": "structuredataghsvs",
+	"version": "2021.07.03",
+	"minimumPhp": "7.3.0",
+	"maximumPhp": "8.99999.99999",
+	"minimumJoomla": "3.9.8",
+	"maximumJoomla": "",
+	"allowDowngrades": "1",
+	"creationDate": "2021-07-03",
+	"licenseLong": "GNU General Public License version 3 or later; see LICENSE.txt.",
+	"copyright": "(C) 2021, G@HService Berlin Neukölln, Volkmar Volli Schlothauer.",
+	"author": {
+		"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
+		"email": "",
+		"url": "https://www.ghsvs.de"
+	},
+	"contributors": [
+		{
+			"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
+			"email": "",
+			"url": "https://www.ghsvs.de"
+		}
+	],
+	"bugs": "https://github.com/GHSVS-de/plg_system_bs3ghsvs/issues",
+	"homepage": "https://github.com/GHSVS-de/plg_system_bs3ghsvs#readme",
+	"keywords": [
+		"joomla",
+		"system plugin"
+	],
+	"private": false,
+	"description": "Joomla library. Installs library spatie/schema-org for structured data.",
+	"license": "GPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/GHSVS-de/lib_structuredataghsvs.git"
+	},
+	"scripts": {
+		"g-build": "node build.js",
+		"g-npm-update-check": "ncu",
+		"g-ncu-override-json": "ncu -u"
+	},
+	"devDependencies": {
+		"adm-zip": "0.5.5",
+		"chalk": "^4.1.1",
+		"commander": "^8.0.0",
+		"fs-extra": "10.0.0",
+		"npm-check-updates": "^11.8.0",
+		"path": "^0.12.7",
+		"recursive-readdir": "^2.2.2",
+		"rimraf": "3.0.2"
+	},
+	"browserslist": []
+}
