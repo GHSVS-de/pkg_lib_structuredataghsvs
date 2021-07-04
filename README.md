@@ -13,8 +13,8 @@ use Spatie\SchemaOrg\Schema;
 use Spatie\SchemaOrg\Organization;
 
 ```
-# Beware
-- The package has a size of 6 to 7 MB.
+# Be aware
+- The package has a size of 6 to 7 MB depending on the size of [spatie/schema-org].
 - This is a Joomla `package` extension instead of just a simple `library` extension. This is simply because so far Joomla does not support the `<scriptfile>` tag for library installations.
 - So after installation you will find two extensions named "Structuredataghsvs" in the extension manager.
 - Stupid, but no further problem.
