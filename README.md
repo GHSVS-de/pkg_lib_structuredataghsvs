@@ -55,7 +55,6 @@ OR
 
 composer install
 ```
-----------------------------------
 
 ## Build installable ZIP package
 - `cd ../` if you're still in `_composer/`.
