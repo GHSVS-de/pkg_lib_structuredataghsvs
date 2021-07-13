@@ -23,14 +23,14 @@
 			"url": "https://www.ghsvs.de"
 		}
 	],
-	"bugs": "https://github.com/GHSVS-de/plg_system_bs3ghsvs/issues",
-	"homepage": "https://github.com/GHSVS-de/plg_system_bs3ghsvs#readme",
+	"bugs": "https://github.com/GHSVS-de/pkg_lib_structuredataghsvs/issues",
+	"homepage": "https://github.com/GHSVS-de/pkg_lib_structuredataghsvs#readme",
 	"keywords": [
 		"joomla",
 		"system plugin"
 	],
 	"private": false,
-	"description": "Joomla library. Installs library spatie/schema-org for structured data.",
+	"description": "Joomla package/library. Provides library spatie/schema-org for structured data.",
 	"license": "GPL-3.0",
 	"repository": {
 		"type": "git",
