@@ -12,7 +12,7 @@
 		"targetplatform": ".*"
 	},
 	"releaseTxt": {
-		"title": "Joomla package with spatie/schema-org library"
+		"title": "Joomla package with spatie/schema-org library."
 	},
 	"changelog": {
 		"projecturl": "https://github.com/GHSVS-de/pkg_lib_structuredataghsvs",

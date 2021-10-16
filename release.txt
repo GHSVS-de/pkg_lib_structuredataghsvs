@@ -1,6 +1,6 @@
 {{version}}
 
-{{releaseTxt.title}} {{version}}
+{{releaseTxt.title}}. V{{version}}
 
 Checksum entities: `{{checksumEntity}}`
 
