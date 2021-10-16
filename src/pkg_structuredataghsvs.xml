@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-	<extension type="package" method="upgrade">
+	<extension type="{{type}}" method="upgrade">
 	<name>pkg_{{filename}}</name>
 	<packagename>{{filename}}</packagename>
 	<author>{{authorName}}</author>
@@ -25,7 +25,7 @@
 	<scriptfile>installerScript.php</scriptfile>
 
 	<files folder="packages">
-		<file type="library" id="{{filename}}">{{zipFilenameLibrary}}</file>
+		{{thisPackages}}
 	</files>
 
 	<files>
