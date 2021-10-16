@@ -15,9 +15,10 @@ use Spatie\SchemaOrg\Organization;
 ```
 # Be aware
 - The package has a size of 6 to 7 MB depending on the size of [spatie/schema-org].
+- - The unzipped files have a size of 30 to 40 MB.
 - This is a Joomla `package` extension instead of just a simple `library` extension. This is simply because so far Joomla does not support the `<scriptfile>` tag for library installations.
 - So after installation you will find two extensions named "Structuredataghsvs" in the extension manager.
-- Stupid, but no further problem.
+- Stupid, but no further problem. Uninstalling the package will remove both extensions.
 
 # Changelog
 - https://updates.ghsvs.de/changelog.php?file=lib_structuredataghsvs
