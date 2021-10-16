@@ -1,6 +1,5 @@
 const fse = require('fs-extra');
 const util = require("util");
-const rimRaf = util.promisify(require("rimraf"));
 const chalk = require('chalk');
 // const exec = util.promisify(require('child_process').exec);
 const path = require('path');
@@ -18,7 +17,6 @@ const {
 const vendorPath = `./_composer/vendor`;
 const packagesDir = `./package/packages`;
 const libDir = `${packagesDir}/lib_structuredataghsvs`;
-const pkgManifest = `./package/pkg_${filename}.xml`;
 const manifestFileName = `pkg_${filename}.xml`;
 const Manifest = `${__dirname}/package/${manifestFileName}`;
 
