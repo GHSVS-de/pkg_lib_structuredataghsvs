@@ -1,5 +1,5 @@
 # pkg_lib_structuredataghsvs
-- Joomla package that installs the structured data library [spatie/schema-org](https://github.com/spatie/schema-org) in Joomla folder `/libraries/structuredataghsvs/`. Not more, not less.
+- Joomla package that installs the structured data PHP library [spatie/schema-org](https://github.com/spatie/schema-org) in Joomla folder `/libraries/structuredataghsvs/`. Not more, not less.
 - I load/initialise it in extensions, respectively helpers, like this:
 
 ```
