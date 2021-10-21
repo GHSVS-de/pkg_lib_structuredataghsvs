@@ -2,8 +2,8 @@
 	"name": "lib_structuredataghsvs",
 	"nameReal": "pkg_structuredataghsvs",
 	"filename": "structuredataghsvs",
-	"version": "2021.10.15",
-	"versionCompare": "2021.07.03",
+	"version": "2021.10.21",
+	"versionCompare": "2021.10.15",
 	"update": {
 		"type": "package",
 		"folder": "",
@@ -22,7 +22,7 @@
 		"docsEN": "",
 		"lastTests": [
 			"Be careful with updates and test yourself!",
-			"This package introduces spatie/schema-org 3.7.0 with schema.org:v12.0!",
+			"This package introduces spatie/schema-org 3.8.0 with schema.org:13.0",
 			"PHP 8",
 			"Joomla 3.10",
 			"Joomla 4.0"
@@ -57,7 +57,7 @@
 		"structured data"
 	],
 	"private": false,
-	"description": "Joomla package/library. Library spatie/schema-org for structured data.",
+	"description": "Joomla package/library. PHP library spatie/schema-org for structured data.",
 	"license": "GPL-3.0",
 	"repository": {
 		"type": "git",
