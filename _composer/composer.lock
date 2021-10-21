@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "spatie/schema-org",
-            "version": "3.7.0",
+            "version": "3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/schema-org.git",
-                "reference": "ba87f62f6cf73184ebef04368cf2348aef9cad5d"
+                "reference": "ce9c9ed51b0c0f9cee682e5a8823bddcc1ceae04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/schema-org/zipball/ba87f62f6cf73184ebef04368cf2348aef9cad5d",
-                "reference": "ba87f62f6cf73184ebef04368cf2348aef9cad5d",
+                "url": "https://api.github.com/repos/spatie/schema-org/zipball/ce9c9ed51b0c0f9cee682e5a8823bddcc1ceae04",
+                "reference": "ce9c9ed51b0c0f9cee682e5a8823bddcc1ceae04",
                 "shasum": ""
             },
             "require": {
@@ -64,7 +64,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/schema-org/issues",
-                "source": "https://github.com/spatie/schema-org/tree/3.7.0"
+                "source": "https://github.com/spatie/schema-org/tree/3.8.0"
             },
             "funding": [
                 {
@@ -76,7 +76,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-10-06T14:46:43+00:00"
+            "time": "2021-10-20T16:40:49+00:00"
         }
     ],
     "packages-dev": [],
