@@ -65,6 +65,12 @@
 			<item><![CDATA[
 				Checksum: <span style="word-wrap:anywhere;">{{checksumEntity}}</span>
 			]]></item>
+
+			<item><![CDATA[
+				<a href="https://github.com/spatie/schema-org/blob/master/CHANGELOG.md">
+					CHANGELOG.md of spatie/schema-org
+				</a>
+			]]></item>
 		</note>
 
 		<remove>
