@@ -64,3 +64,24 @@ module.exports.findVersionSub = async (packagesFile, packageName) =>
 
 	return foundVersion;
 }
+
+// Find version string in file. E.g. 'scssphp/scssphp'
+module.exports.findVersionSub = async (packagesFile, packageName) =>
+{
+	console.log(chalk.magentaBright(
+	`Search versionSub of package "${packageName}" in "${packagesFile}".`));
+
+	let foundVersion = '';
+	const {packages} = require(packagesFile);
+
+	await packages.forEach((Package) =>
+	{
+		if (Package.name === packageName)
+		{
+			foundVersion = Package.version_normalized;
+			return false;
+		}
+	});
+
+	return foundVersion;
+}
