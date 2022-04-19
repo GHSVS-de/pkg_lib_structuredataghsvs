@@ -2,8 +2,8 @@
 	"name": "lib_structuredataghsvs",
 	"nameReal": "pkg_structuredataghsvs",
 	"filename": "structuredataghsvs",
-	"version": "2021.10.21",
-	"versionCompare": "2021.10.15",
+	"version": "2022.04.19",
+	"versionCompare": "2021.10.21",
 	"update": {
 		"type": "package",
 		"folder": "",
@@ -65,18 +65,16 @@
 	},
 	"scripts": {
 		"g-build": "node build.js",
-		"g-npm-update-check": "ncu",
-		"g-ncu-override-json": "ncu -u"
+		"updateCheck": "npm outdated",
+		"update": "npm update --save-dev"
 	},
 	"devDependencies": {
-		"adm-zip": "0.5.9",
-		"chalk": "^4.1.2",
-		"commander": "^8.2.0",
-		"fs-extra": "10.0.0",
-		"npm-check-updates": "^11.8.5",
+		"adm-zip": "^0.5.9",
+		"fs-extra": "^10.1.0",
 		"path": "^0.12.7",
+		"picocolors": "^1.0.0",
 		"recursive-readdir": "^2.2.2",
-		"rimraf": "3.0.2"
+		"rimraf": "^3.0.2"
 	},
 	"browserslist": []
 }
