@@ -110,34 +110,34 @@ const Manifest = `${__dirname}/package/${manifestFileName}`;
   .then(
 		hash => {
 			const tag = `<${Digest}>${hash}</${Digest}>`;
-			console.log(chalk.greenBright(`Checksum tag is: ${tag}`));
+			console.log(pc.green(pc.bold(`Checksum tag is: ${tag}`)));
 			return tag;
 		}
 	)
 	.catch(error => {
 		console.log(error);
-		console.log(chalk.redBright(`Error while checksum creation. I won't set one!`));
+		console.log(pc.red(pc.bold(`Error while checksum creation. I won't set one!`)));
 		return '';
 	});
 
 	xmlFile = 'update.xml';
 	await fse.copy(`./${xmlFile}`, `./dist/${xmlFile}`).then(
-		answer => console.log(chalk.yellowBright(
-			`Copied "${xmlFile}" to ./dist.`))
+		answer => console.log(pc.yellow(pc.bold(
+			`Copied "${xmlFile}" to ./dist.`)))
 	);
 	await replaceXml.main(`${__dirname}/dist/${xmlFile}`, zipFilename, checksum);
 
 	xmlFile = 'changelog.xml';
 	await fse.copy(`./${xmlFile}`, `./dist/${xmlFile}`).then(
-		answer => console.log(chalk.yellowBright(
-			`Copied "${xmlFile}" to ./dist.`))
+		answer => console.log(pc.yellow(pc.bold(
+			`Copied "${xmlFile}" to ./dist.`)))
 	);
 	await replaceXml.main(`${__dirname}/dist/${xmlFile}`, zipFilename, checksum);
 
 	xmlFile = 'release.txt';
 	await fse.copy(`./${xmlFile}`, `./dist/${xmlFile}`).then(
-		answer => console.log(chalk.yellowBright(
-			`Copied "${xmlFile}" to ./dist.`))
+		answer => console.log(pc.yellow(pc.bold(
+			`Copied "${xmlFile}" to ./dist.`)))
 	);
 	await replaceXml.main(`${__dirname}/dist/${xmlFile}`, zipFilename, checksum,
 		thisPackages);
