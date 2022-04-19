@@ -12,7 +12,11 @@
 		"targetplatform": ".*"
 	},
 	"releaseTxt": {
-		"title": "Joomla package with spatie/schema-org library."
+		"title": "Joomla package with spatie/schema-org library.",
+		"requires": [],
+		"uses": [
+			"https://github.com/spatie/schema-org"
+		]
 	},
 	"changelog": {
 		"projecturl": "https://github.com/GHSVS-de/pkg_lib_structuredataghsvs",
@@ -25,7 +29,7 @@
 			"This package introduces spatie/schema-org 3.8.0 with schema.org:13.0",
 			"PHP 8",
 			"Joomla 3.10",
-			"Joomla 4.0"
+			"Joomla 4.1"
 		]
 	},
 	"minimumPhp": "7.4.0",
