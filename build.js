@@ -1,7 +1,5 @@
 const fse = require('fs-extra');
-const util = require("util");
-const chalk = require('chalk');
-// const exec = util.promisify(require('child_process').exec);
+const pc = require('picocolors');
 const path = require('path');
 const replaceXml = require('./build/replaceXml.js');
 const helper = require('./build/helper.js');
@@ -32,28 +30,28 @@ const Manifest = `${__dirname}/package/${manifestFileName}`;
 	versionSub = await helper.findVersionSub (
 		path.join(__dirname, vendorPath, `composer/installed.json`),
 			'spatie/schema-org');
-	console.log(chalk.magentaBright(`versionSub identified as: "${versionSub}"`));
+	console.log(pc.magenta(pc.bold(`versionSub identified as: "${versionSub}"`)));
 
-	await console.log(chalk.redBright(`Be patient! Copy actions!`));
+	await console.log(pc.red(pc.bold(`Be patient! Copy actions!`)));
 
 	await fse.copy(`./src`, `./package`
 	).then(
-		answer => console.log(chalk.yellowBright(`Copied "./src" to "./package".`))
+		answer => console.log(pc.yellow(pc.bold(`Copied "./src" to "./package".`)))
 	);
 
 	// Copy vendor to lib_folder.
-	await console.log(chalk.redBright(`Be patient! Composer copy actions!`));
+	await console.log(pc.red(pc.bold(`Be patient! Composer copy actions!`)));
 	await fse.copy(`${vendorPath}`, `${libDir}/vendor`
 	).then(
-		answer => console.log(chalk.yellowBright(
-			`Copied "_composer/vendor" to "${libDir}/vendor".`))
+		answer => console.log(pc.yellow(pc.bold(
+			`Copied "_composer/vendor" to "${libDir}/vendor".`)))
 	);
 
 	if (!(await fse.exists(`./dist`)))
 	{
     	await fse.mkdir(`./dist`
 		).then(
-			answer => console.log(chalk.yellowBright(`Created "./dist".`))
+			answer => console.log(pc.yellow(pc.bold(`Created "./dist".`)))
 		);
   }
 
@@ -69,14 +67,14 @@ const Manifest = `${__dirname}/package/${manifestFileName}`;
 	await replaceXml.main(xmlFile);
 
 	await fse.copy(xmlFile, `./dist/${xmlFileName}`).then(
-		answer => console.log(chalk.yellowBright(
-			`Copied "${xmlFileName}" to "./dist".`))
+		answer => console.log(pc.yellow(pc.bold(
+			`Copied "${xmlFileName}" to "./dist".`)))
 	);
 
 	let zip = new (require("adm-zip"))();
 	zip.addLocalFolder(folderToZip, false);
 	await zip.writeZip(zipFile);
-	console.log(chalk.cyanBright(chalk.bgRed(`"${zipFile}" written.`)));
+	console.log(pc.cyan(pc.bold(pc.bgRed(`"${zipFile}" written.`))));
 
 	await helper.cleanOut([libDir]);
 
@@ -97,14 +95,14 @@ const Manifest = `${__dirname}/package/${manifestFileName}`;
 	await replaceXml.main(xmlFile, null, null, thisPackages);
 
 	await fse.copy(xmlFile, `./dist/${xmlFileName}`).then(
-		answer => console.log(chalk.yellowBright(
-			`Copied "${xmlFileName}" to "./dist".`))
+		answer => console.log(pc.yellow(pc.bold(
+			`Copied "${xmlFileName}" to "./dist".`)))
 	);
 
 	zip = new (require("adm-zip"))();
 	zip.addLocalFolder(folderToZip, false);
 	await zip.writeZip(zipFile);
-	console.log(chalk.cyanBright(chalk.bgRed(`"${zipFile}" written.`)));
+	console.log(pc.cyan(pc.bold(pc.bgRed(`"${zipFile}" written.`))));
 	// ##### Zip the Package (main). END.
 
 	const Digest = 'sha256'; //sha384, sha512
@@ -149,7 +147,7 @@ const Manifest = `${__dirname}/package/${manifestFileName}`;
 	];
 
 	await helper.cleanOut(cleanOuts).then(
-		answer => console.log(chalk.cyanBright(chalk.bgRed(
-			`Finished. Good bye!`)))
+		answer => console.log(pc.cyan(pc.bold(pc.bgRed(
+			`Finished. Good bye!`))))
 	);
 })();
