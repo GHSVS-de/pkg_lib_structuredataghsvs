@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-	<extension type="{{type}}" method="upgrade">
-	<name>pkg_{{filename}}</name>
+<extension type="{{type}}" method="{{method}}">
+	<name>{{nameUpper}}</name>
 	<packagename>{{filename}}</packagename>
 	<author>{{authorName}}</author>
 	<creationDate>{{creationDate}}</creationDate>
@@ -10,11 +10,11 @@
 	<version>{{version}}</version>
 	<description>{{description}}</description>
 
-	<updateservers><server type="extension" priority="1" name="{{nameUpper}}">https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/{{name}}-update.xml</server></updateservers>
+	<updateservers><server type="extension" priority="1" name="{{nameUpper}}">https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/{{updateFilePrefix}}-update.xml</server></updateservers>
 
-	<changelogurl>https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/{{name}}-changelog.xml</changelogurl>
+	<changelogurl>https://raw.githubusercontent.com/GHSVS-de/upadateservers/master/{{updateFilePrefix}}-changelog.xml</changelogurl>
 
-	<infourl>https://updates.ghsvs.de/changelog.php?file={{name}}</infourl>
+	<infourl>https://updates.ghsvs.de/changelog.php?file={{updateFilePrefix}}</infourl>
 
 	<minimumPhp>{{minimumPhp}}</minimumPhp>
 	<maximumPhp>{{maximumPhp}}</maximumPhp>
