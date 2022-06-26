@@ -15,23 +15,35 @@ use Spatie\SchemaOrg\Organization;
 ```
 # Be aware
 - The package has a size of 6 to 7 MB depending on the size of [spatie/schema-org].
-- - The unzipped files have a size of 30 to 40 MB.
+  - The unzipped files have a **size of 30 to 40 MB**.
 - This is a Joomla `package` extension instead of just a simple `library` extension. This is simply because so far Joomla does not support the `<scriptfile>` tag for library installations.
 - So after installation you will find two extensions named "Structuredataghsvs" in the extension manager.
-- Stupid, but no further problem. Uninstalling the package will remove both extensions.
+- Stupid, but no further problem.
+- To uninstall the library uninstall the package.
 
-# Changelog
-- https://updates.ghsvs.de/changelog.php?file=lib_structuredataghsvs
+-----------------------------------------------------
+
+# My personal build procedure (WSL 1, Debian, Win 10)
+
+**@since versions greater then 022.04.19_3.11.0.0: Build procedure uses local repo fork of https://github.com/GHSVS-de/buildKramGhsvs**
 
 # My personal build procedure
 - Prepare/adapt `./package.json`.
-
 - `cd /mnt/z/git-kram/pkg_lib_structuredataghsvs/`
 
 ## node/npm updates/installation
+- `npm install` (if never done before)
+
+### Update dependencies
 - `npm run updateCheck` or (faster) `npm outdated`
 - `npm run update` (if needed) or (faster) `npm update --save-dev`
-- `npm install` (if needed)
+
+## Check package.json overrides
+Extensions in src/packages/**/ may have a file `packageOverride.json` that can be merged into the main `package.json` during build.
+
+Thus you can override some parameters for `replaceXml.js` of repo `buildKramGhsvs`.
+
+Not documented. Therfore see `./build.js` (`helper.mergeJson`, `replaceXmlOptions.jsonString`).
 
 ## composer
 - The composer.json is located in folder `./_composer`
