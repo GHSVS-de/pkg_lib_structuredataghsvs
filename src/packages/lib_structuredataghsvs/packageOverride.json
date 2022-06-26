@@ -1,0 +1,7 @@
+{
+	"name": "lib_structuredataghsvs",
+	"update": {
+		"type": "library"
+	},
+	"description": "Joomla library. Part of Joomla package \"pkg_structuredataghsvs\". Contains PHP library spatie/schema-org for structured data creation. Not more.."
+}
