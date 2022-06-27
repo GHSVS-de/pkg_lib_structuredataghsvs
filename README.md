@@ -25,7 +25,7 @@ use Spatie\SchemaOrg\Organization;
 
 # My personal build procedure (WSL 1, Debian, Win 10)
 
-**@since versions greater then 022.04.19_3.11.0.0: Build procedure uses local repo fork of https://github.com/GHSVS-de/buildKramGhsvs**
+**@since versions greater then 2022.04.19_3.11.0.0: Build procedure uses local repo fork of https://github.com/GHSVS-de/buildKramGhsvs**
 
 # My personal build procedure
 - Prepare/adapt `./package.json`.
