@@ -63,14 +63,7 @@ let thisPackages = [];
 	to = `${libDir}/vendor`;
 	await helper.copy(from, to);
 
-	to = './dist';
-
-	if (!(await fse.exists(to)))
-	{
-		await fse.mkdir(to).then(
-			answer => console.log(pc.yellow(pc.bold(`Created "${to}".`)))
-		);
-	}
+	await helper.mkdir('./dist');
 
 	// ##### The Library (child). START.
 
