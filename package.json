@@ -35,14 +35,13 @@
 		"lastTests": [
 			"PHP 8.0",
 			"PHP 8.1",
-			"PHP 7.4",
 			"Joomla 3.10",
 			"Joomla 4.1"
 		]
 	},
-	"minimumPhp": "7.4.0",
+	"minimumPhp": "8.0.0",
 	"maximumPhp": "8.99999.99999",
-	"minimumJoomla": "3.9.8",
+	"minimumJoomla": "3.10.0",
 	"maximumJoomla": "4.9999.9999",
 	"allowDowngrades": "1",
 	"creationDate": "2021-07-03",
@@ -67,7 +66,7 @@
 		"structured data"
 	],
 	"private": false,
-	"description": "Joomla package/library. Installs PHP library spatie/schema-org for structured data creation. Not more.",
+	"description": "Joomla package/library. Installs PHP library spatie/schema-org for structured data creation. Target: Joomla folder /libraries/structuredataghsvs/. Not more.",
 	"license": "GPL-3.0",
 	"repository": {
 		"type": "git",
